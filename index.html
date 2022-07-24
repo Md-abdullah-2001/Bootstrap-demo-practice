@@ -57,7 +57,7 @@
             <div class="carousel-inner">
               <div class="carousel-item active">
                 <img src="./images/banner.png" class="d-block w-100" alt="...">
-                <div class="carousel-caption d-none d-md-block">
+                <div class="carousel-caption  d-md-block">
                     <h1 class="ms-auto">The perfect venue for your <br> next event</h1>
                     <p>
                       Amet minim mollit non deserunt ullamco est <br>   dolor do amet
@@ -69,7 +69,7 @@
               </div>
               <div class="carousel-item active">
                 <img src="./images/banner.png" class="d-block w-100" alt="...">
-                <div class="carousel-caption d-none d-md-block">
+                <div class="carousel-caption  d-md-block">
                     <h1 class="ms-auto">The perfect venue for your <br> next event</h1>
                     <p>
                       Amet minim mollit non deserunt ullamco est sit <br>  dolor do amet
@@ -81,7 +81,7 @@
               </div>
               <div class="carousel-item active">
                 <img src="./images/banner.png" class="d-block w-100" alt="...">
-                <div class="carousel-caption d-none d-md-block">
+                <div class="carousel-caption  d-md-block">
                     <h1 class="ms-auto">The perfect venue for  your <br> next event</h1>
                     <p>
                       Amet minim mollit non deserunt ullamco est sit <br> dolor do amet
@@ -135,7 +135,7 @@
         <h1 class="text-center mt-5 pb-5">Our Packages</h1>
         <div class="row">
           <div class="col-md-3">
-            <div class="card border-0" style="width: 18rem">
+            <div class="card border-0 shadow" style="width: 18rem">
               <div class="card-body">
                 <h1 class="card-title">$300</h1>
                 <h3 class="card-subtitle mb-2 text-muted">Business fair</h3>
@@ -153,7 +153,7 @@
           </div>
 
           <div class="col-md-3">
-            <div class="card border-0" style="width: 18rem">
+            <div class="card border-0 shadow" style="width: 18rem">
               <div class="card-body">
                 <h1 class="card-title">$300</h1>
                 <h3 class="card-subtitle mb-2 text-muted">Business fair</h3>
@@ -187,7 +187,7 @@
             </div>
           </div>
           <div class="col-md-3">
-            <div class="card border-0 pe-2" style="width: 18rem">
+            <div class="card border-0 pe-2 shadow" style="width: 18rem">
               <div class="card-body">
                 <h1 class="card-title">$300</h1>
                 <h3 class="card-subtitle mb-2 text-muted">Business fair</h3>
@@ -215,7 +215,7 @@
 
             <div class="card shadow border-0" style="width: 18rem;">
                
-                <div class="card-body">
+                <div class="card-body text-center">
                  
                   <p class="card-text text-center w-100">Slate helps you see how 
 
@@ -235,7 +235,7 @@
 
             <div class="card shadow border-0" style="width: 18rem;">
                
-                <div class="card-body">
+                <div class="card-body text-center">
                  
                   <p class="card-text text-center w-100">Slate helps you see how 
 
@@ -255,7 +255,7 @@
 
             <div class="card shadow border-0" style="width: 18rem;">
                
-                <div class="card-body">
+                <div class="card-body text-center">
                  
                   <p class="card-text text-center w-100">Slate helps you see how 
 
@@ -375,6 +375,15 @@
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
       crossorigin="anonymous"
-    ></script>
+    >
+  </script>
+
+<script>
+  window.onload = (e) => {
+    let myToast = document.querySelector(".toast");
+    let bsToast = new bootstrap.Toast(myToast);
+    bsToast.show();
+  };
+</script>
   </body>
 </html>
