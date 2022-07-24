@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <header class="container bg-white p-2">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand fw-bold" href="#">Abocus convention center</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link fw-bold active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fw-bold" href="#">Features</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fw-bold" href="#">Pricing</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fw-bold" href="#">Reviews</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="/images/banner.png" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h1 class="ms-auto">The perfect venue for your <br> next event</h1>
+                    <p>
+                      Amet minim mollit non deserunt ullamco est <br>   dolor do amet
+                      Velit officia consequat duis  velit
+                    </p>
+                
+                    <button class="btn btn-light ms-auto">Book Now</button>
+                </div>
+              </div>
+              <div class="carousel-item active">
+                <img src="/images/banner.png" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h1 class="ms-auto">The perfect venue for your <br> next event</h1>
+                    <p>
+                      Amet minim mollit non deserunt ullamco est sit <br>  dolor do amet
+                       Velit officia consequat duis  velit
+                    </p>
+                
+                    <button class="btn btn-light ms-auto">Book Now</button>
+                </div>
+              </div>
+              <div class="carousel-item active">
+                <img src="/images/banner.png" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h1 class="ms-auto">The perfect venue for  your <br> next event</h1>
+                    <p>
+                      Amet minim mollit non deserunt ullamco est sit <br> dolor do amet
+                       Velit officia consequat duis velit
+                    </p>
+                
+                    <button class="btn btn-light ms-auto">Book Now</button>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+
+      <section class="container">
+        <div class="row mt-5">
+          <div class="col-md-6 sm-12">
+            <img class="img-fluid" src="/images/wedding.png" alt="" />
+          </div>
+          <div class="col-md-6 sm-12 mt-5">
+            <h1>Every moment is Precious</h1>
+            <p>
+              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+              amet sint. Velit officia consequat duis enim velit mollit.
+              Exercitation veniam consequat sunt nostrud amet.
+            </p>
+
+        
+            <button class="btn btn-info text-white">Explore our album</button>
+
+                <!-- toast  -->
+                <div class="toast align-items-center" role="alert" disply-block aria-live="assertive" aria-atomic="false">
+                    <div class="d-flex">
+                      <div class="toast-body">
+                        Hello, world! This is a toast message.
+                      </div>
+                      <button type="button" class="btn-close me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+                    </div>
+                  </div>
+                  <!-- toast ends -->
+          </div>
+        </div>
+      </section>
+      <section class="container mt-5">
+        <h1 class="text-center mt-5 pb-5">Our Packages</h1>
+        <div class="row">
+          <div class="col-md-3">
+            <div class="card border-0" style="width: 18rem">
+              <div class="card-body">
+                <h1 class="card-title">$300</h1>
+                <h3 class="card-subtitle mb-2 text-muted">Business fair</h3>
+                <p class="card-text">
+                  For most businesses event <br> like book fair, craft fair.
+                </p>
+                <p>limited space access </p>
+                 <p>Secuirty facility</p>   
+                   <p> event support</p>
+                  <p> Decoration design</p> 
+                   <p> Per day bill</p>
+                <button class="btn btn-light">choose plan</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div class="card border-0" style="width: 18rem">
+              <div class="card-body">
+                <h1 class="card-title">$300</h1>
+                <h3 class="card-subtitle mb-2 text-muted">Business fair</h3>
+                <p class="card-text">
+                  For most businesses event <br> like book fair, craft fair.
+                </p>
+                <p>limited space access </p>
+                 <p>Secuirty facility</p>   
+                   <p> event support</p>
+                  <p> Decoration design</p> 
+                   <p> Per day bill</p>
+                <button class="btn btn-light">choose plan</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 ">
+            <div class="card border-0 text-bg-primary  shadow" style="width: 18rem">
+              <div class="card-body">
+                <h1 class="card-title">$300</h1>
+                <h3 class="card-subtitle mb-2 text-muted">Business fair</h3>
+                <p class="card-text">
+                  For most businesses event <br> like book fair, craft fair.
+                </p>
+                <p>limited space access </p>
+                 <p>Secuirty facility</p>   
+                   <p> event support</p>
+                  <p> Decoration design</p> 
+                   <p> Per day bill</p>
+                <button class="btn btn-light">choose plan</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="card border-0 pe-2" style="width: 18rem">
+              <div class="card-body">
+                <h1 class="card-title">$300</h1>
+                <h3 class="card-subtitle mb-2 text-muted">Business fair</h3>
+                <p class="card-text">
+                  For most businesses event <br> like book fair, craft fair.
+                </p>
+                <p>limited space access </p>
+                 <p>Secuirty facility</p>   
+                   <p> event support</p>
+                  <p> Decoration design</p> 
+                   <p> Per day bill</p>
+                <button class="btn btn-light">choose plan</button>
+              </div>
+            </div>
+          </div>
+         
+         
+      </section>
+
+      <section class="container">
+       <div class="row mt-5">
+        <h1 class="text-center mt-5">Happy Clients Says</h1>
+
+        <div class="col-md-4 mt-5 col-sm-12">
+
+            <div class="card shadow border-0" style="width: 18rem;">
+               
+                <div class="card-body">
+                 
+                  <p class="card-text text-center w-100">Slate helps you see how 
+
+                    many more days you need 
+                    
+                    to work to reach your financial 
+                    
+                    goal for the month and year.</p>
+                  <img class="card-img-fluid " src="/images/person 1.png" alt="...">
+                  <h5 class="card-title text-center">Regina Miles</h5>
+                  <h6 class="card-title text-center"> Banker</h6>
+                   
+                </div>
+              </div>
+        </div>
+        <div class="col-md-4 mt-5 col-sm-12">
+
+            <div class="card shadow border-0" style="width: 18rem;">
+               
+                <div class="card-body">
+                 
+                  <p class="card-text text-center w-100">Slate helps you see how 
+
+                    many more days you need 
+                    
+                    to work to reach your financial 
+                    
+                    goal for the month and year.</p>
+                  <img class="card-img-fluid " src="/images/person 1.png" alt="...">
+                  <h5 class="card-title text-center">Regina Miles</h5>
+                  <h6 class="card-title text-center"> Banker</h6>
+                   
+                </div>
+              </div>
+        </div>
+        <div class="col-md-4 mt-5  col-sm-12">
+
+            <div class="card shadow border-0" style="width: 18rem;">
+               
+                <div class="card-body">
+                 
+                  <p class="card-text text-center w-100">Slate helps you see how 
+
+                    many more days you need 
+                    
+                    to work to reach your financial 
+                    
+                    goal for the month and year.</p>
+                  <img class="card-img-fluid " src="/images/person 1.png" alt="...">
+                  <h5 class="card-title text-center">Regina Miles</h5>
+                  <h6 class="card-title text-center"> Banker</h6>
+                   
+                </div>
+              </div>
+        </div>
+        
+       </div>
+      </section>
+
+
+      <section class="container">
+
+
+        <div class="row mt-5">
+            <h1 class="text-center mt-5">Frequently Asked Questions</h1>
+            <div class="col-md-6 sm-12 mt-5">
+                <div class="accordion" id="accordionPanelsStayOpenExample">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                            How early do we need to start planning an event
+
+                        </button>
+                      </h2>
+                      <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+                        <div class="accordion-body">
+                          <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. It's also worth noting that just about any HTML can go within the  though the transition does limit overflow.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                            What is your refund and cancellation policy?
+                        </button>
+                      </h2>
+                      <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+                        <div class="accordion-body">
+                          <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                            What is your refund and cancellation policy?
+                        </button>
+                      </h2>
+                      <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+                        <div class="accordion-body">
+                          <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                            What is your refund and cancellation policy?
+                        </button>
+                      </h2>
+                      <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+                        <div class="accordion-body">
+                          <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                            What is your refund and cancellation policy?
+                        </button>
+                      </h2>
+                      <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+                        <div class="accordion-body">
+                          <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                            What is your refund and cancellation policy?
+                        </button>
+                      </h2>
+                      <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+                        <div class="accordion-body">
+                          <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                        </div>
+                      </div>
+                    </div>
+                 
+                  </div>
+            </div>
+            <div class="col-md-6 sm-12 d-flex align-items-center  mb-5">
+                <img class="img-fluid mt-auto" src="/images/people.png" alt="">
+            </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+
+        <h4 class="pt-5 text-light text-center">© 2020 bike. All rights reserved</h4>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
